@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=0.1.0
+Type=Application
+Name=Oxidized Optics
+GenericName=Newtonian scope collimator
+Comment=Help you collimating your newtonian friend
+Exec=rcoll %F
+Icon=rcoll
+Terminal=false
+Categories=Science;Astronomy;
+Keywords=astronomy;collimation;telescope;
+StartupNotify=true

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f1720"/>
+      <stop offset="100%" stop-color="#081018"/>
+    </linearGradient>
+
+    <linearGradient id="rust" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f08a34"/>
+      <stop offset="50%" stop-color="#d35f1f"/>
+      <stop offset="100%" stop-color="#8f3514"/>
+    </linearGradient>
+
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7de3e8" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#17404a" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background circle -->
+  <circle cx="128" cy="128" r="118" fill="url(#bg)"/>
+
+  <!-- outer ring -->
+  <circle cx="128" cy="128" r="88"
+          fill="none"
+          stroke="url(#rust)"
+          stroke-width="12"
+          stroke-linecap="round"/>
+
+  <!-- lens arc -->
+  <path d="M176 74
+           A72 72 0 0 1 176 182"
+        fill="none"
+        stroke="url(#glass)"
+        stroke-width="14"
+        stroke-linecap="round"/>
+
+  <!-- crosshair -->
+  <line x1="128" y1="56" x2="128" y2="200"
+        stroke="#f3efe8"
+        stroke-width="6"
+        stroke-linecap="round"/>
+
+  <line x1="56" y1="128" x2="200" y2="128"
+        stroke="#f3efe8"
+        stroke-width="6"
+        stroke-linecap="round"/>
+
+  <!-- inner target -->
+  <circle cx="128" cy="128" r="34"
+          fill="none"
+          stroke="#f3efe8"
+          stroke-width="5"/>
+
+  <circle cx="128" cy="128" r="10"
+          fill="url(#rust)"/>
+
+  <!-- tiny rust specks -->
+  <circle cx="82" cy="88" r="2" fill="#c94f1b" opacity="0.7"/>
+  <circle cx="168" cy="98" r="2" fill="#c94f1b" opacity="0.7"/>
+  <circle cx="92" cy="170" r="2" fill="#c94f1b" opacity="0.7"/>
+  <circle cx="174" cy="166" r="2" fill="#c94f1b" opacity="0.7"/>
+</svg>
+
+
